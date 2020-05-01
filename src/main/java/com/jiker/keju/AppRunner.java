@@ -20,8 +20,7 @@ public class AppRunner {
         String receipt = "";
         while (null != (inputLine = br.readLine())) {
             String fare = setReceipt(taxiFare.calculationFare(commonUtil.getMiles(inputLine), commonUtil.getWaitingMinutes(inputLine)));
-            receipt = receipt + fare;
-        }
+            receipt = receipt + fare; }
         br.close();
         return receipt;
     }
